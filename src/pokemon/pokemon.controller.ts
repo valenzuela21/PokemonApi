@@ -31,8 +31,8 @@ export class PokemonController {
     @Query('limit') limit: string = '100',
     @Query('offset') offset: string = '1',
   ) {
-    const limitNumber = parseInt(limit, 100);
-    const offsetNumber = parseInt(offset, 1);
+    const limitNumber = Number(limit);
+    const offsetNumber = Number(offset);
     return await this.pokemonService.findAll(limitNumber, offsetNumber);
   }
 
