@@ -27,12 +27,12 @@ POKEMON_API_URL="https://pokeapi.co/api/v2/"
 
 ## Dependencies
 
-* [@nestjs/axios](https://example.com): Version 3.0.3
-* [@nestjs/common](https://example.com): Version 10.0.0
-* [@nestjs/config](https://example.com): Version 3.2.3
-* [@nestjs/core](https://example.com): Version 10.0.0
-* [@nestjs/mapped-types](https://example.com): Version Latest
-* [@nestjs/platform-express](https://example.com): Version 10.4.3
+* [@nestjs/axios](https://www.npmjs.com/package/@nestjs/axios): Version 3.0.3
+* [@nestjs/common](https://www.npmjs.com/package/@nestjs/common): Version 10.0.0
+* [@nestjs/config](https://www.npmjs.com/package/@nestjs/config): Version 3.2.3
+* [@nestjs/core](https://www.npmjs.com/package/@nestjs/core): Version 10.0.0
+* [@nestjs/mapped-types](https://www.npmjs.com/package/@nestjs/mapped-types): Version Latest
+* [@nestjs/platform-express](https://www.npmjs.com/package/@nestjs/platform-express): Version 10.4.3
 * [@nestjs/swagger](https://example.com): Version 7.4.2
 * [axios](https://example.com): Version 1.7.7
 * [dotenv](https://example.com): Version 16.4.5
