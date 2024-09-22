@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { PokemonService } from './pokemon.service';
-import { ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('pokemon')
 @ApiResponse({
@@ -37,11 +37,23 @@ export class PokemonController {
   }
 
   @Get(':name')
+  @ApiParam({
+    name: 'name',
+    required: true,
+    description: 'The name of the Pokémon',
+    example: 'squirtle',
+  })
   async findOne(@Param('name') name: string) {
     return await this.pokemonService.findOne(name);
   }
 
   @Get('/pokemonAndTypes/:name')
+  @ApiParam({
+    name: 'name',
+    required: true,
+    description: 'The name of the Pokémon',
+    example: 'squirtle',
+  })
   async pokemonAndType(@Param('name') name: string) {
     return await this.pokemonService.pokemonAndType(name);
   }
